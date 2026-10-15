@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "ms-vscode.cpptools",
+    "formulahendry.code-runner",
+    "bmewburn.vscode-intelephense-client",
+    "xdebug.php-debug",
+    "ecmel.vscode-html-css",
+    "ritwickdey.LiveServer"
+  ]
+}
