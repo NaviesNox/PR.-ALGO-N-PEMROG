@@ -107,27 +107,14 @@ int main() {
                     cout << "[Sistem] Pilihan tidak tersedia, pilih 1-5" << endl ;
                 break;
             }
-        if (kenyang >100)
-        {
-            kenyang = 100;
-        }
-        if (energi >100)
-        {
-            energi = 100;
-        }
-        if (senang >100)
-        {
-            senang = 100;
-        }
-        if (kenyang <=0 || energi <=0 || senang <= 0)
-        {
+        kenyang = (kenyang>100) ? 100 : kenyang;
+        energi = (energi >100) ? 100 : energi;
+        senang = (senang >100) ? 100 : senang;
+        if (kenyang <=0 || energi <=0 || senang <= 0) {
             gameBerjalan = false;
             system("cls");
             cout<< "[Sistem] Game Over!! Peliharaan mu mati karena salah satu kondisinya 0." << endl;
-        }
-            
-        if (aksi > 3)
-        {
+        }else if(aksi > 3) {
             hari = hari+1;
             aksi = 1;
             cout << " [Sistem] Aksi hari ini telah habis (Max 3 aksi). Hari berganti menjadi hari-" << hari << endl;
