@@ -1,0 +1,5 @@
+Parameter by Value
+Parameter PASS by References
+PASS BY POINTER
+dikirmkan alamat dari variable (&angka)
+ *x = 

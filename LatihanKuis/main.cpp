@@ -21,6 +21,7 @@ int main() {
     aksi = 1, 
     hari = 1 , 
     pilihan  = 0, 
+    status = 0,
     senang = 50;
     bool gameBerjalan = true;
 
