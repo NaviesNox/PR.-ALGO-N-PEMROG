@@ -23,7 +23,7 @@ int main() {
     pilihan  = 0, 
     senang = 50;
     bool gameBerjalan = true;
-    system("cls");
+
     cout << "=======================================================" << endl ;
     cout << "        Simulasi Virtual PET (TAMAGOTCHI)  DAY-" << hari << endl ;
     cout << "=======================================================" << endl ;
@@ -33,9 +33,7 @@ int main() {
         if (hari >7)
         {
             cout<< "\n [Sistem] Selamat Kamu berhasil merawat peliharaan mu selama seminggu (7 hari)" << endl;
-            cout << "Press any key to continue...";
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            _getch();
+            system("pause");
             break;
         }
         
@@ -124,9 +122,7 @@ int main() {
             gameBerjalan = false;
             system("cls");
             cout<< "[Sistem] Game Over!! Peliharaan mu mati karena salah satu kondisinya 0." << endl;
-        }
-            
-        if (aksi > 3)
+        }else if (aksi > 3)
         {
             hari = hari+1;
             aksi = 1;
@@ -134,6 +130,7 @@ int main() {
         }
     
         cout << "Press any key to continue...";
+            system("pause");
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             _getch();
 
